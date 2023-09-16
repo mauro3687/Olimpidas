@@ -1,13 +1,8 @@
-
-import './App.css'
-import Login from './components/login/login'
+import "./App.css";
+import Login from "./components/login/login";
 
 function App() {
-  return(
-    <Login/>
-  )
-
-  
+  return <Login />;
 }
 
-export default App
+export default App;

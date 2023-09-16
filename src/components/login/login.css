@@ -1,3 +1,50 @@
-.bg {
+* {
+  box-sizing: border-box;
+}
+body {
+  background: #f4e0e0;
+}
+
+.fondo {
+  margin-top: 3%;
+  height: 550px;
+  width: 100%;
+  max-width: 1180px;
+  background: #ffffff;
+  border-radius: 40px;
+}
+.lg {
   background: red;
+}
+.fondo2 {
+  background: #cedcff;
+  height: 550px;
+  mix-blend-mode: multiply;
+  border-radius: 40px;
+}
+.fondo3 {
+  background: #ffffff;
+  height: 550px;
+  mix-blend-mode: multiply;
+  border-radius: 40px;
+}
+.logo {
+  max-width: 250px;
+  width: 100%;
+  height: 100%;
+  max-height: 250px;
+  display: flex;
+  position: relative;
+  top: 161px;
+
+  left: 40px;
+  mix-blend-mode: multiply;
+  flex-shrink: 0;
+}
+.logo-derecho {
+  mix-blend-mode: multiply;
+  max-width: 250px;
+  width: 100%;
+  height: 100%;
+  max-height: 250px;
 }
