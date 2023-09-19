@@ -23,7 +23,7 @@ function Dashboard() {
                     </a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link text-black" href="#">
+                    <a className="nav-link text-black" href="/">
                       <img
                         src={imagenes.hom}
                         alt="Icono"
@@ -33,7 +33,7 @@ function Dashboard() {
                     </a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link text-black" href="#">
+                    <a className="nav-link text-black" href="/pacientes">
                       <img
                         src={imagenes.grupo}
                         alt="Icono"
@@ -47,7 +47,7 @@ function Dashboard() {
               <div className="col">
                 <ul className="navbar-nav">
                   <li className="nav-item">
-                    <a className="nav-link text-black" href="#">
+                    <a className="nav-link text-black" href="/enfermeros">
                       <img
                         src={imagenes.enf}
                         alt="Icono"
@@ -57,7 +57,7 @@ function Dashboard() {
                     </a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link text-black" href="#">
+                    <a className="nav-link text-black" href="/areas">
                       <img
                         src={imagenes.are}
                         alt="Icono"
@@ -67,7 +67,7 @@ function Dashboard() {
                     </a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link text-black" href="#">
+                    <a className="nav-link text-black" href="/llamadas">
                       <img
                         src={imagenes.lla}
                         alt="Icono"
@@ -127,12 +127,6 @@ function Dashboard() {
               </li>
             </ul>
           </nav>
-        </div>
-        {/* Contenido principal */}
-        <div className="col-10 bg-D7BDE2">
-          <div className="d-flex justify-content-center align-items-center h-100">
-            <img src={imagenes.logo} alt="Imagen" className="img-fluid img-logo" />
-          </div>
         </div>
       </div>
     </div>

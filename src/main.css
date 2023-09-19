@@ -1,0 +1,22 @@
+/* Estilos para el contenedor principal */
+.container_completo {
+    display:flex
+}
+  
+
+.container_dash {
+
+  position:absolute;
+  min-width: 80%;
+
+  flex:1;
+
+
+}
+  
+/* Estilos para el Login */
+.container_page {
+
+  flex:2;
+
+}

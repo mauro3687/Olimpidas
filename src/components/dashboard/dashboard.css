@@ -1,4 +1,7 @@
 /* Estilos para el menú lateral */
+*{
+}
+
 .bg-nav {
   background-color: #D7BDE2;
   min-height: 100vh;
