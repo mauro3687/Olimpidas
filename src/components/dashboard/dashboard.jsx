@@ -1,72 +1,142 @@
 import imagenes from "../../../public/img/imagenes";
-import Navbar from "../navbar/navbar";
-// fijate en main.jsx como hago las rutas
-// aca despues de navbar pone la imagen y listo
-// en menos de 30 minutos lo debes tener terminado
-// si no lo tienen terminado es porque son unos fracasados
-import './dashboard.css'
+import "./dashboard.css";
 
 function Dashboard() {
   return (
-    <div class="wrapper">
-    <div class="sidebar">
-        <h2>Bienvenidos</h2>
-        <br />
-        <br />
-        <ul>
-        
-            <li>
-            <img src={imagenes.grupo} alt="" className="seg" />
-                <a href=""><i class="fas fa-home">
-              </i>Paciente</a>
+    <div className="container-fluid">
+      <div className="row">
+        {/* Menú lateral */}
+        <div className="col-2 bg-nav text-white">
+          <nav className="nav flex-column mt-5">
+            <h4 className="mb-4">Menú</h4>
+            <div className="row">
+              <div className="col">
+                <ul className="navbar-nav">
+                  <li className="nav-item">
+                    <a className="nav-link text-black" href="#">
+                      <img
+                        src={imagenes.logo}
+                        alt="Icono"
+                        className="icono-menu"
+                      />
+                      Bienvenidos
+                    </a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link text-black" href="#">
+                      <img
+                        src={imagenes.hom}
+                        alt="Icono"
+                        className="icono-menu"
+                      />
+                      Home
+                    </a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link text-black" href="#">
+                      <img
+                        src={imagenes.grupo}
+                        alt="Icono"
+                        className="icono-menu"
+                      />
+                      Paciente
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div className="col">
+                <ul className="navbar-nav">
+                  <li className="nav-item">
+                    <a className="nav-link text-black" href="#">
+                      <img
+                        src={imagenes.enf}
+                        alt="Icono"
+                        className="icono-menu"
+                      />
+                      Enfermero
+                    </a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link text-black" href="#">
+                      <img
+                        src={imagenes.are}
+                        alt="Icono"
+                        className="icono-menu"
+                      />
+                      Área
+                    </a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link text-black" href="#">
+                      <img
+                        src={imagenes.lla}
+                        alt="Icono"
+                        className="icono-menu"
+                      />
+                      Llamadas
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div className="col">
+                <ul className="navbar-nav">
+                  <li className="nav-item">
+                    <a className="nav-link text-black" href="#">
+                      <img
+                        src={imagenes.ale}
+                        alt="Icono"
+                        className="icono-menu"
+                      />
+                      Alerta
+                    </a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link text-black" href="#">
+                      <img
+                        src={imagenes.es}
+                        alt="Icono"
+                        className="icono-menu"
+                      />
+                      Estadísticas
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <hr /> {/* Línea separadora */}
+            <ul className="navbar-nav"> {/* Agregar los enlaces abajo de todo */}
+              <li className="nav-item">
+                <a className="nav-link text-black" href="#">
+                  <img
+                    src={imagenes.cer }
+                    alt="Icono"
+                    className="icono-menu"
+                  />
+                  Cerrar Sesión
+                </a>
               </li>
-            <li>
-              <img src={imagenes.enf} alt="" className="enfer" />
-              <a href="#"><i class="fas fa-user"></i>Enfermero</a>
+              <li className="nav-item">
+                <a className="nav-link text-black" href="#">
+                  <img
+                    src={imagenes.info}
+                    alt="Icono"
+                    className="icono-menu"
+                  />
+                  Información
+                </a>
               </li>
-            <li>
-              <img src={imagenes.are} alt="" className="area" />
-              <a href="#"><i class="fas fa-address-card"></i>Areas</a>
-              </li>
-            <li>
-            <img src={imagenes.lla} alt="" className="llamada" />
-
-              <a href="#"><i class="fas fa-project-diagram">
-                </i>Llamadas</a></li>
-            <li>
-            <img src={imagenes.ale} alt="" className="alerta" />
-
-              <a href="#"><i class="fas fa-blog">
-                </i>Alerta</a></li>
-            <li>
-            <img src={imagenes.es} alt="" className="esta" />
-
-              <a href="#"><i class="fas fa-address-book">
-                </i>Estadistica</a></li>
-            <li>
-            <img src={imagenes.grupo} alt="" className="seg" />
-
-              <a href="#"><i class="fas fa-address-book">
-                </i>Informacion</a></li>
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-        
-            <li>
-              <img src={imagenes.cer} alt="" className="cerra" />
-              <a href="#"><i class="fas fa-map-pin">
-                </i>Cerrar sesion</a></li>
-        </ul> 
+            </ul>
+          </nav>
+        </div>
+        {/* Contenido principal */}
+        <div className="col-10 bg-D7BDE2">
+          <div className="d-flex justify-content-center align-items-center h-100">
+            <img src={imagenes.logo} alt="Imagen" className="img-fluid img-logo" />
+          </div>
+        </div>
+      </div>
     </div>
-    </div>  
-
-    
-  )  
+  );
 }
-export default Dashboard;
 
+export default Dashboard;
