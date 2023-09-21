@@ -1,44 +1,41 @@
 /* Estilos para el menú lateral */
 .bg-nav {
-    background-color: #D7BDE2;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* Alinea los elementos al principio */
-  }
-  
-  .bg-nav h4 {
-    text-align: center;
-    font-size: 1.5rem;
-    color: black;
-  }
-  
-  .bg-nav .nav-link {
-    color: black;
-    display: flex; /* Aplicar display: flex para los enlaces */
-    align-items: center; /* Alinear elementos verticalmente */
-    gap: 10px; /* Espacio entre el icono y el texto */
-  }
-  
-  .bg-nav .nav-link:hover {
-    background-color: #fff;
-    color: #D7BDE2;
-  }
-  
-  /* Estilos para los iconos del menú */
-  .icono-menu {
-    width: 24px; /* Tamaño deseado para los iconos */
-    height: 24px; /* Tamaño deseado para los iconos */
-    vertical-align: middle; /* Alinea verticalmente con el texto */
-  }
-  
-  /* Estilos para el contenido principal */
-  .bg-light {
-    background-color: #f8f9fa;
-    min-height: 100vh;
-  }
-  
-  .img-logo {
-    mix-blend-mode: multiply;
-  }
-  
+  background-color: #D7BDE2;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 200px;
+  padding: 20px;
+}
+
+.bg-nav h4 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: black;
+}
+
+.bg-nav .nav-link {
+  color: black;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.bg-nav .nav-link:hover {
+  background-color: #fff;
+  color: #D7BDE2;
+}
+
+/* Estilos para el icono del menú */
+.icono-menu {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+
+/* Estilos para el contenido principal */
+.bg-light {
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}

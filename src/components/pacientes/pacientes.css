@@ -1,0 +1,188 @@
+/* Estilos para el encabezado */
+.header {
+  display: flex;
+  justify-content: space-between;
+  /* Distribuye los elementos alrededor */
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Estilos para el contador de cartas */
+.card-count {
+  font-size: 30px;
+}
+
+.count-img{
+  max-width: 50px;
+}
+
+/* Estilos para el botón de agregar */
+.add-button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  background-color: #2980b9;
+}
+
+/* Estilos para el campo de búsqueda */
+.search-input {
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  padding: 5px 10px;
+  flex-grow: 1;
+  /* Este estilo hace que el campo de búsqueda ocupe todo el espacio disponible */
+  margin-right: 20px;
+  margin-left: 20px;
+  /* Agrega margen entre el campo de búsqueda y el botón Agregar */
+}
+
+/* Estilos para las tarjetas */
+.card {
+  background-color: lightgray;
+  padding: 10px;
+  border-radius: 15px;
+  /* Agregamos border-radius de 15px */
+  margin: 10px;
+}
+
+/* Estilos para el contenedor de las tarjetas */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Estilos para los botones de "Borrar" y "Entrar" */
+.delete-button {
+  background-color: #ffcccc;
+  color: #cc0000;
+  border: 1px solid #cc0000;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-right: 10px;
+  border-radius: 15px;
+  /* Agregamos border-radius de 15px */
+}
+
+/* Estilos para el ícono de búsqueda */
+.search-icon {
+  font-size: 20px;
+  margin-right: 10px;
+  color: #333;
+}
+
+/* Estilos para el mensaje de error */
+.error-message {
+  color: #ff0000;
+  /* Color rojo para indicar el error */
+  font-size: 14px;
+  margin-top: 5px;
+  /* Espacio superior para separarlo del campo de nombre */
+}
+
+.enter-button {
+  background-color: #cce5ff;
+  color: #005cbf;
+  border: 1px solid #005cbf;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 15px;
+  /* Agregamos border-radius de 15px */
+}
+
+/* Estilos para el modal */
+.modal {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Fondo semitransparente */
+  z-index: 1000;
+  /* Z-index alto para que el modal esté por encima del contenido */
+  display: flex;
+  align-items: center;
+  /* Centra verticalmente */
+  justify-content: center;
+  /* Centra horizontalmente */
+}
+
+/* Estilos para el contenido del modal */
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  /* Sombra alrededor del modal */
+  z-index: 1001;
+  /* Z-index mayor para estar por encima del modal de fondo */
+  max-width: 300px;
+  /* Ancho máximo del cuadro del modal */
+  width: 100%;
+  /* Para que se ajuste al ancho máximo en pantallas pequeñas */
+}
+
+/* Estilos para el botón de cancelar en el modal */
+.cancel-button {
+  background-color: #ffcccc;
+  color: #cc0000;
+  border: 1px solid #cc0000;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 15px;
+  /* Agregamos border-radius de 15px */
+}
+
+.cancel-button:hover {
+  background-color: #999;
+}
+
+.accept-button {
+  background-color: #cce5ff;
+  color: #005cbf;
+  border: 1px solid #005cbf;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 15px;
+  /* Agregamos border-radius de 15px */
+}
+
+.accept-button:hover {
+  background-color: #999;
+}
+
+.logo-image{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: multiply;
+}
+
+.Buttons {
+  display: flex;
+  justify-content: space-between;
+  /* Distribuye los elementos alrededor */
+  align-items: flex-start;
+  /* Alinea los elementos en la parte superior */
+  padding-top: 20px;
+}
+
+.button-left {
+  align-self: flex-start;
+  /* Alinea este botón en la parte superior */
+}
+
+.button-right {
+  align-self: flex-end;
+  /* Alinea este botón en la parte inferior */
+}
